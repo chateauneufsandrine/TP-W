@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: hsl(36, 100%, 99%);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+
+  & > a {
+    height: 100%;
+  }
+
+  & > div {
+    height: 50%;
+  }
+}
+.menu-desktop {
+  display: none;
+
+  & a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+  }
+}
+/* #en-tete{
+  font-size: 0.9 rem;
+} */
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  color: hsl(35, 77%, 62%);
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+#Home {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  & button {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+.hero-img-desktop {
+  display: none;
+}
+
+#New {
+  background-color: rgb(28, 6, 44);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & h3,
+  p {
+    color: hsl(233, 8%, 79%);
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+  }
+
+  & article {
+    flex-direction: column;
+  }
+}
+
+article {
+  display: flex;
+  gap: 16px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(235, 14%, 67%);
+}
+
+.button {
+  background-color: hsl(5, 85%, 63%);
+  width: 100px;
+  display: flex;
+
+  color: hsl(233, 8%, 79%);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+hr {
+  border: 1px solid hsl(236, 13%, 42%);
+}
+
+.number {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+#Trending-Categories,
+.bloc-Home,
+.bloc2-Home {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.attribution {
+  font-size: 0.4rem;
+}
+
+.bloc-double {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 640px) {
+  #Trending-Categories {
+    flex-direction: row;
+  }
+  #New {
+    flex-direction: column;
+  }
+  .bloc-Home {
+    display: flex;
+    flex-direction: row;
+  }
+  main {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-left: 50px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-burger {
+    display: none;
+  }
+
+  .bloc-double {
+    flex-direction: row;
+  }
+
+  body {
+    padding-left: 100px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
+
+  #Home {
+    width: 65%;
+  }
+
+  .hero-img-mobile {
+    display: none;
+  }
+
+  .hero-img-desktop {
+    display: flex;
+  }
+
+  #New {
+    width: 35%;
+  }
+
+  .menu-desktop {
+    display: flex;
+    gap: 18px;
+
+    & a:hover{
+      color: brown;
+    }
+  }
+  
+}
